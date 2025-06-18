@@ -6,10 +6,12 @@ MiniEngine: \
   CMakeFiles/MiniEngine.dir/src/Texture.cpp.o \
   CMakeFiles/MiniEngine.dir/src/Window.cpp.o \
   CMakeFiles/MiniEngine.dir/src/main.cpp.o \
-  /usr/lib/libglfw.so.3.4 \
+  external/glfw/src/libglfw3.a \
   /usr/lib/libGL.so \
   external/glad/libglad.a \
-  /usr/lib/libglm.a \
+  external/glm/glm/libglm.a \
+  /usr/lib/librt.a \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libdl.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -62,13 +64,17 @@ CMakeFiles/MiniEngine.dir/src/Window.cpp.o:
 
 CMakeFiles/MiniEngine.dir/src/main.cpp.o:
 
-/usr/lib/libglfw.so.3.4:
+external/glfw/src/libglfw3.a:
 
 /usr/lib/libGL.so:
 
 external/glad/libglad.a:
 
-/usr/lib/libglm.a:
+external/glm/glm/libglm.a:
+
+/usr/lib/librt.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libdl.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so:
 

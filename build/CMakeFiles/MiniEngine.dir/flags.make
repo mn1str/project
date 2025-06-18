@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include
+CXX_INCLUDES = -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -I/home/mn1str/project/external/glfw/include -I/home/mn1str/project/external/glm/include -I/home/mn1str/project/external/glm
 
 CXX_FLAGS = -std=gnu++17
 

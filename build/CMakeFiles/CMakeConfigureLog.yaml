@@ -1092,3 +1092,251 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.44.0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "external/glfw/src/CMakeLists.txt:70 (check_function_exists)"
+    checks:
+      - "Looking for memfd_create"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "HAVE_MEMFD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_47540/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj'
+        /usr/bin/make  -f CMakeFiles/cmTC_47540.dir/build.make CMakeFiles/cmTC_47540.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj'
+        Building C object CMakeFiles/cmTC_47540.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -o CMakeFiles/cmTC_47540.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj/CheckFunctionExists.c
+        Linking C executable cmTC_47540
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47540.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create CMakeFiles/cmTC_47540.dir/CheckFunctionExists.c.o -o cmTC_47540
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-FXaVKj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:701 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d9dd/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG'
+        /usr/bin/make  -f CMakeFiles/cmTC_3d9dd.dir/build.make CMakeFiles/cmTC_3d9dd.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG'
+        Building C object CMakeFiles/cmTC_3d9dd.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_3d9dd.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG/CheckFunctionExists.c
+        Linking C executable cmTC_3d9dd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d9dd.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_3d9dd.dir/CheckFunctionExists.c.o -o cmTC_3d9dd  /usr/lib/libX11.so /usr/lib/libXext.so
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-Qh6OWG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:716 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f5265/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5'
+        /usr/bin/make  -f CMakeFiles/cmTC_f5265.dir/build.make CMakeFiles/cmTC_f5265.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5'
+        Building C object CMakeFiles/cmTC_f5265.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_f5265.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5/CheckFunctionExists.c
+        Linking C executable cmTC_f5265
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5265.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_f5265.dir/CheckFunctionExists.c.o -o cmTC_f5265
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-iNGXn5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:730 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_69e47/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B'
+        /usr/bin/make  -f CMakeFiles/cmTC_69e47.dir/build.make CMakeFiles/cmTC_69e47.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B'
+        Building C object CMakeFiles/cmTC_69e47.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_69e47.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B/CheckFunctionExists.c
+        Linking C executable cmTC_69e47
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69e47.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_69e47.dir/CheckFunctionExists.c.o -o cmTC_69e47
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-bmDN3B'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:739 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fee99/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954'
+        /usr/bin/make  -f CMakeFiles/cmTC_fee99.dir/build.make CMakeFiles/cmTC_fee99.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954'
+        Building C object CMakeFiles/cmTC_fee99.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_fee99.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954/CheckFunctionExists.c
+        Linking C executable cmTC_fee99
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fee99.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_fee99.dir/CheckFunctionExists.c.o -o cmTC_fee99
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-yjf954'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:748 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_05658/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ'
+        /usr/bin/make  -f CMakeFiles/cmTC_05658.dir/build.make CMakeFiles/cmTC_05658.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ'
+        Building C object CMakeFiles/cmTC_05658.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_05658.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ/CheckFunctionExists.c
+        Linking C executable cmTC_05658
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05658.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_05658.dir/CheckFunctionExists.c.o -o cmTC_05658
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-ol7ZTZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:758 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc"
+      binary: "/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/mn1str/project/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_66aaa/fast
+        make[1]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc'
+        /usr/bin/make  -f CMakeFiles/cmTC_66aaa.dir/build.make CMakeFiles/cmTC_66aaa.dir/build
+        make[2]: Entering directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc'
+        Building C object CMakeFiles/cmTC_66aaa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_66aaa.dir/CheckFunctionExists.c.o -c /home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc/CheckFunctionExists.c
+        Linking C executable cmTC_66aaa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66aaa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_66aaa.dir/CheckFunctionExists.c.o -o cmTC_66aaa  -lICE
+        make[2]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc'
+        make[1]: Leaving directory '/home/mn1str/project/build/CMakeFiles/CMakeScratch/TryCompile-cZvFpc'
+        
+      exitCode: 0
+...

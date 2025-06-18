@@ -144,10 +144,12 @@ MiniEngine: CMakeFiles/MiniEngine.dir/src/Window.cpp.o
 MiniEngine: CMakeFiles/MiniEngine.dir/src/main.cpp.o
 MiniEngine: CMakeFiles/MiniEngine.dir/build.make
 MiniEngine: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-MiniEngine: /usr/lib/libglfw.so.3.4
+MiniEngine: external/glfw/src/libglfw3.a
 MiniEngine: /usr/lib/libGL.so
 MiniEngine: external/glad/libglad.a
-MiniEngine: /usr/lib/libglm.a
+MiniEngine: external/glm/glm/libglm.a
+MiniEngine: /usr/lib/librt.a
+MiniEngine: /usr/lib/libm.so
 MiniEngine: CMakeFiles/MiniEngine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MiniEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MiniEngine.dir/link.txt --verbose=$(VERBOSE)

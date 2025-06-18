@@ -2,7 +2,12 @@
 	"InstallScripts" : 
 	[
 		"/home/mn1str/project/build/cmake_install.cmake",
-		"/home/mn1str/project/build/external/glad/cmake_install.cmake"
+		"/home/mn1str/project/build/external/glad/cmake_install.cmake",
+		"/home/mn1str/project/build/external/glfw/cmake_install.cmake",
+		"/home/mn1str/project/build/external/glfw/src/cmake_install.cmake",
+		"/home/mn1str/project/build/external/glfw/docs/cmake_install.cmake",
+		"/home/mn1str/project/build/external/glm/cmake_install.cmake",
+		"/home/mn1str/project/build/external/glm/glm/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
