@@ -1,4 +1,5 @@
 #include "engine/Window.h"
+#include "GLFW/glfw3.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow*, int, int);
@@ -26,6 +27,23 @@ GLFWwindow* createWindow(int width, int height, const char *title){
 	return window_ptr;
 }
 
-void framebuffer_size_callback(GLFWwindow *w, int width, int height){
+void framebuffer_size_callback(GLFWwindow*, int width, int height){
 	glViewport(0, 0, width, height);
+}
+
+void toggleFullscreen(GLFWwindow* window, int SCR_WIDTH, int SCR_HEIGHT){
+	static bool fullscr = false;
+	static int x, y;
+	int count;
+	GLFWmonitor **monitors = glfwGetMonitors(&count);
+	GLFWmonitor *monitor = monitors[1];
+	const GLFWvidmode *mode = glfwGetVideoMode(monitors[1]);
+	if(fullscr){
+		glfwSetWindowMonitor(window, nullptr, x, y, SCR_WIDTH, SCR_HEIGHT, 0);
+		fullscr = false;
+	}else{
+		glfwGetWindowPos(window, &x, &y);
+		glfwSetWindowMonitor(window, monitor, 0, 0, mode->width, mode->height, mode->refreshRate);
+		fullscr = true;
+	}
 }

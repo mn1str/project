@@ -112,6 +112,10 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	Camera camera{vec3(-2.0f, 4.0f, 3.0f),  -vec3(-2.0f, 4.0f, 3.0f) + vec3(0.0f, 1.0f, 0.0f)};
+	// Camera camera{vec3(-2.0f, 4.0f, 3.0f), -90.0f, 0.0f, 0.1f};
+	glfwSetWindowUserPointer(window, &camera);
+	glfwSetCursorPosCallback(window, mouse_input_callback_dispatch);
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 	mat4 projection = perspective(radians(45.0f), (float)SCR_WIDTH / (float) SCR_HEIGHT, 0.1f, 100.0f);
 	shader.uniformMat4("projection", projection);
@@ -119,6 +123,7 @@ int main()
 //input
 		processInput(window);
 		camera.process_keyboard_input(window);
+		camera.debug();
 //clear
 		shader.uniformMat4("view", camera.getViewTransformationMatrix());
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -145,8 +150,16 @@ int main()
 }
 
 void processInput(GLFWwindow* window){
+	static bool fullscr = false;
 	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
 		glfwSetWindowShouldClose(window, 1);
+	}
+	if(glfwGetKey(window, GLFW_KEY_F11)){
+		toggleFullscreen(window, SCR_WIDTH, SCR_HEIGHT);
+		float xd = static_cast<float>(glfwGetTime());
+		while (glfwGetTime() - xd < 0.2f) {
+
+		}
 	}
 }
 
