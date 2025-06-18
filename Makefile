@@ -1,7 +1,6 @@
 default_target: all
 
 clean:
-	rm -f compile_commands.json
 	rm -f MiniEngine
 
 all: clean
