@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/mn1str/project/build",
+  "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/Shader.cpp.o -c /home/mn1str/project/src/Shader.cpp",
+  "file": "/home/mn1str/project/src/Shader.cpp",
+  "output": "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"
+},
+{
+  "directory": "/home/mn1str/project/build",
+  "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/Texture.cpp.o -c /home/mn1str/project/src/Texture.cpp",
+  "file": "/home/mn1str/project/src/Texture.cpp",
+  "output": "CMakeFiles/MiniEngine.dir/src/Texture.cpp.o"
+},
+{
+  "directory": "/home/mn1str/project/build",
+  "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/Window.cpp.o -c /home/mn1str/project/src/Window.cpp",
+  "file": "/home/mn1str/project/src/Window.cpp",
+  "output": "CMakeFiles/MiniEngine.dir/src/Window.cpp.o"
+},
+{
+  "directory": "/home/mn1str/project/build",
+  "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/main.cpp.o -c /home/mn1str/project/src/main.cpp",
+  "file": "/home/mn1str/project/src/main.cpp",
+  "output": "CMakeFiles/MiniEngine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/mn1str/project/build/external/glad",
+  "command": "/usr/bin/cc  -I/home/mn1str/project/external/glad/include  -o CMakeFiles/glad.dir/src/glad.c.o -c /home/mn1str/project/external/glad/src/glad.c",
+  "file": "/home/mn1str/project/external/glad/src/glad.c",
+  "output": "external/glad/CMakeFiles/glad.dir/src/glad.c.o"
+}
+]

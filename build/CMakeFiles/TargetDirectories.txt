@@ -1,0 +1,6 @@
+/home/mn1str/project/build/CMakeFiles/MiniEngine.dir
+/home/mn1str/project/build/CMakeFiles/edit_cache.dir
+/home/mn1str/project/build/CMakeFiles/rebuild_cache.dir
+/home/mn1str/project/build/external/glad/CMakeFiles/glad.dir
+/home/mn1str/project/build/external/glad/CMakeFiles/edit_cache.dir
+/home/mn1str/project/build/external/glad/CMakeFiles/rebuild_cache.dir
