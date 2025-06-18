@@ -14,6 +14,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
+#include <engine/Camera.h>
 
 using namespace glm;
 using namespace std;
@@ -30,6 +31,7 @@ int main()
 		return -1;
 	}
 	GLFWwindow *window = createWindow(SCR_WIDTH, SCR_HEIGHT, "XD");
+
 	Shader shader("shaders/vertexshader", "shaders/fragmentshader");
 	unsigned int program = shader.programID;
 	unsigned int texture = createTexture("resources/textures/grass.jpg");
@@ -109,17 +111,16 @@ int main()
 	glUseProgram(program);
 	glEnable(GL_DEPTH_TEST);
 
-
-	mat4 view = mat4(1.0f);
-	view = lookAt(vec3(-2.0f, 4.0f, 3.0f), vec3(0.0f, 1.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f));
-	shader.uniformMat4("view", view);
+	Camera camera{vec3(-2.0f, 4.0f, 3.0f),  -vec3(-2.0f, 4.0f, 3.0f) + vec3(0.0f, 1.0f, 0.0f)};
 
 	mat4 projection = perspective(radians(45.0f), (float)SCR_WIDTH / (float) SCR_HEIGHT, 0.1f, 100.0f);
 	shader.uniformMat4("projection", projection);
 	while(!glfwWindowShouldClose(window)){
 //input
 		processInput(window);
+		camera.process_keyboard_input(window);
 //clear
+		shader.uniformMat4("view", camera.getViewTransformationMatrix());
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 //render
