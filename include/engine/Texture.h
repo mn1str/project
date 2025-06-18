@@ -1,9 +1,3 @@
 #pragma once
 
-
-
-class Texture {
-public:
-    unsigned int textureID{};
-    Texture(const char*);
-};
+unsigned int createTexture(const char*);

@@ -10,8 +10,6 @@
 #include <glm/fwd.hpp>
 #include <glm/trigonometric.hpp>
 #include <iostream>
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -31,14 +29,11 @@ int main()
 		std::cerr << "Failed to initialize GLFW\n";
 		return -1;
 	}
-	Window createWindow(SCR_WIDTH, SCR_HEIGHT, "XD");
-	GLFWwindow *window = createWindow.window_ptr;
+	GLFWwindow *window = createWindow(SCR_WIDTH, SCR_HEIGHT, "XD");
 	Shader shader("shaders/vertexshader", "shaders/fragmentshader");
 	unsigned int program = shader.programID;
-	Texture createTexture("resources/textures/grass.jpg");
-	unsigned int texture = createTexture.textureID;
-	Texture createTexture2("resources/textures/container.jpg");
-	unsigned int texture2 = createTexture2.textureID;
+	unsigned int texture = createTexture("resources/textures/grass.jpg");
+	unsigned int texture2 = createTexture("resources/textures/container.jpg");;
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, texture);
 

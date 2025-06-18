@@ -1,9 +1,11 @@
 #include <engine/Texture.h>
 #include <glad/glad.h>
-#include <stb_image.h>
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 #include <iostream>
 
-Texture::Texture(const char *path){
+unsigned int createTexture(const char *path){
+    unsigned int textureID;
     glGenTextures(1, &textureID);
     glBindTexture(GL_TEXTURE_2D, textureID); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
     // set the texture wrapping parameters
@@ -27,4 +29,5 @@ Texture::Texture(const char *path){
     }
     stbi_image_free(data);
     glBindTexture(GL_TEXTURE_2D, 0);
+    return textureID;
 }

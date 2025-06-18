@@ -3,13 +3,12 @@
 
 void framebuffer_size_callback(GLFWwindow*, int, int);
 
-Window::Window(int width, int height, const char *title){
-	
+GLFWwindow* createWindow(int width, int height, const char *title){
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	
-	window_ptr = glfwCreateWindow(width, height, title, NULL, NULL);
+	GLFWwindow* window_ptr = glfwCreateWindow(width, height, title, NULL, NULL);
 	if(window_ptr == NULL){
 		std::cerr << "Failed to create window" << '\n';
 		glfwTerminate();
@@ -24,6 +23,7 @@ Window::Window(int width, int height, const char *title){
 
 	glViewport(0, 0, width, height);
 
+	return window_ptr;
 }
 
 void framebuffer_size_callback(GLFWwindow *w, int width, int height){
