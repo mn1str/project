@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mn1str/project/src/Block.cpp" "CMakeFiles/MiniEngine.dir/src/Block.cpp.o" "gcc" "CMakeFiles/MiniEngine.dir/src/Block.cpp.o.d"
   "/home/mn1str/project/src/Camera.cpp" "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o.d"
   "/home/mn1str/project/src/Shader.cpp" "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o.d"
   "/home/mn1str/project/src/Texture.cpp" "CMakeFiles/MiniEngine.dir/src/Texture.cpp.o" "gcc" "CMakeFiles/MiniEngine.dir/src/Texture.cpp.o.d"

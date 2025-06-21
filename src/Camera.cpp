@@ -20,12 +20,16 @@ inline void Camera::updateCameraFrontVec(){
 }
 
 void Camera::process_keyboard_input(GLFWwindow* window){
-    float camera_speed = 0.05f;
+    float camera_speed = 5.f;
+    if(frameLogic != nullptr) camera_speed *=* frameLogic;
+    vec3 temp = camera_front;
+    temp.y = 0;
+    temp = normalize(temp);
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){
-        camera_position += camera_speed * camera_front;
+        camera_position += camera_speed * temp;
     }
     if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS){
-        camera_position -= camera_speed * camera_front;
+        camera_position -= camera_speed * temp;
     }
     if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS){
         camera_position += normalize(cross(camera_front, up_vec)) *camera_speed;

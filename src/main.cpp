@@ -4,6 +4,7 @@
 #include "engine/Shader.h"
 #include "engine/Texture.h"
 #include "engine/Window.h"
+#include "glm/ext/matrix_clip_space.hpp"
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/ext/quaternion_transform.hpp>
 #include <glm/ext/vector_float3.hpp>
@@ -15,6 +16,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <vector>
 #include <engine/Camera.h>
+#include <structures/Block.h>
 
 using namespace glm;
 using namespace std;
@@ -83,14 +85,21 @@ int main()
 		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f
 	};
 
-	vector<vec3> cubePosistions{
-		vec3(0.0f, 0.0f, 0.0f),
-		vec3(0.0f, 1.0f, 0.0f),
-		vec3(0.0f, 2.0f, 0.0f),
-		vec3(-1.0f, 0.0f, 0.0f),
-		vec3(1.0f, 0.0f, 0.0f)
+	vector<ivec3> cubePosistions{
+
 	};
 
+	vector<Block> blocks;
+
+
+	constexpr int TEST = 100;
+	for(int i{}; i < TEST; ++i){
+		for(int j{}; j < TEST; ++j){
+			for(int k{}; k < TEST; ++k){
+				cubePosistions.push_back(ivec3(i,j,k));
+			}
+		}
+	}
 
 	unsigned int VBO, VAO;
 	glGenVertexArrays(1, &VAO);
@@ -111,6 +120,10 @@ int main()
 	glUseProgram(program);
 	glEnable(GL_DEPTH_TEST);
 
+	for(ivec3 pos : cubePosistions){
+		blocks.push_back(Block{pos, &shader});
+	}
+
 	Camera camera{vec3(-2.0f, 4.0f, 3.0f),  -vec3(-2.0f, 4.0f, 3.0f) + vec3(0.0f, 1.0f, 0.0f)};
 	// Camera camera{vec3(-2.0f, 4.0f, 3.0f), -90.0f, 0.0f, 0.1f};
 	glfwSetWindowUserPointer(window, &camera);
@@ -119,7 +132,13 @@ int main()
 
 	mat4 projection = perspective(radians(45.0f), (float)SCR_WIDTH / (float) SCR_HEIGHT, 0.1f, 100.0f);
 	shader.uniformMat4("projection", projection);
+	float deltaTime;
+	camera.frameLogic = &deltaTime;
 	while(!glfwWindowShouldClose(window)){
+//frame logic
+		static float lastTime{};
+		float currentTime = glfwGetTime();
+		deltaTime = currentTime - lastTime;
 //input
 		processInput(window);
 		camera.process_keyboard_input(window);
@@ -129,6 +148,10 @@ int main()
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 //render
+
+
+
+
 
 		for(vec3 pos : cubePosistions){
 			mat4 model = mat4(1.0f);
@@ -143,14 +166,20 @@ int main()
 //xd
 		glfwSwapBuffers(window);
 		glfwPollEvents();
+
+
+
+		lastTime = currentTime;
 	}
 
+	glDeleteProgram(program);
 	glfwTerminate();
 	return 0;
 }
 
 void processInput(GLFWwindow* window){
 	static bool fullscr = false;
+	static bool wireframe = false;
 	if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
 		glfwSetWindowShouldClose(window, 1);
 	}
@@ -159,6 +188,15 @@ void processInput(GLFWwindow* window){
 		float xd = static_cast<float>(glfwGetTime());
 		while (glfwGetTime() - xd < 0.2f) {
 
+		}
+	}
+	if(glfwGetKey(window, GLFW_KEY_C)){
+		if(!wireframe){
+			glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+			wireframe = true;
+		} else{
+			glPolygonMode( GL_FRONT_AND_BACK, GL_FILL );
+			wireframe = false;
 		}
 	}
 }

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MiniEngine.dir/link.d"
+  "CMakeFiles/MiniEngine.dir/src/Block.cpp.o"
+  "CMakeFiles/MiniEngine.dir/src/Block.cpp.o.d"
   "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o"
   "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o.d"
   "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"

@@ -72,10 +72,24 @@ include CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/codegen:
 .PHONY : CMakeFiles/MiniEngine.dir/codegen
 
+CMakeFiles/MiniEngine.dir/src/Block.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
+CMakeFiles/MiniEngine.dir/src/Block.cpp.o: /home/mn1str/project/src/Block.cpp
+CMakeFiles/MiniEngine.dir/src/Block.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiniEngine.dir/src/Block.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/Block.cpp.o -MF CMakeFiles/MiniEngine.dir/src/Block.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/Block.cpp.o -c /home/mn1str/project/src/Block.cpp
+
+CMakeFiles/MiniEngine.dir/src/Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MiniEngine.dir/src/Block.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mn1str/project/src/Block.cpp > CMakeFiles/MiniEngine.dir/src/Block.cpp.i
+
+CMakeFiles/MiniEngine.dir/src/Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MiniEngine.dir/src/Block.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mn1str/project/src/Block.cpp -o CMakeFiles/MiniEngine.dir/src/Block.cpp.s
+
 CMakeFiles/MiniEngine.dir/src/Camera.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/src/Camera.cpp.o: /home/mn1str/project/src/Camera.cpp
 CMakeFiles/MiniEngine.dir/src/Camera.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MiniEngine.dir/src/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MiniEngine.dir/src/Camera.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/Camera.cpp.o -MF CMakeFiles/MiniEngine.dir/src/Camera.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/Camera.cpp.o -c /home/mn1str/project/src/Camera.cpp
 
 CMakeFiles/MiniEngine.dir/src/Camera.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/MiniEngine.dir/src/Camera.cpp.s: cmake_force
 CMakeFiles/MiniEngine.dir/src/Shader.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/src/Shader.cpp.o: /home/mn1str/project/src/Shader.cpp
 CMakeFiles/MiniEngine.dir/src/Shader.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/Shader.cpp.o -MF CMakeFiles/MiniEngine.dir/src/Shader.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/Shader.cpp.o -c /home/mn1str/project/src/Shader.cpp
 
 CMakeFiles/MiniEngine.dir/src/Shader.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/MiniEngine.dir/src/Shader.cpp.s: cmake_force
 CMakeFiles/MiniEngine.dir/src/Texture.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/src/Texture.cpp.o: /home/mn1str/project/src/Texture.cpp
 CMakeFiles/MiniEngine.dir/src/Texture.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MiniEngine.dir/src/Texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MiniEngine.dir/src/Texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/Texture.cpp.o -MF CMakeFiles/MiniEngine.dir/src/Texture.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/Texture.cpp.o -c /home/mn1str/project/src/Texture.cpp
 
 CMakeFiles/MiniEngine.dir/src/Texture.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/MiniEngine.dir/src/Texture.cpp.s: cmake_force
 CMakeFiles/MiniEngine.dir/src/Window.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/src/Window.cpp.o: /home/mn1str/project/src/Window.cpp
 CMakeFiles/MiniEngine.dir/src/Window.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MiniEngine.dir/src/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MiniEngine.dir/src/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/Window.cpp.o -MF CMakeFiles/MiniEngine.dir/src/Window.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/Window.cpp.o -c /home/mn1str/project/src/Window.cpp
 
 CMakeFiles/MiniEngine.dir/src/Window.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/MiniEngine.dir/src/Window.cpp.s: cmake_force
 CMakeFiles/MiniEngine.dir/src/main.cpp.o: CMakeFiles/MiniEngine.dir/flags.make
 CMakeFiles/MiniEngine.dir/src/main.cpp.o: /home/mn1str/project/src/main.cpp
 CMakeFiles/MiniEngine.dir/src/main.cpp.o: CMakeFiles/MiniEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MiniEngine.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MiniEngine.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MiniEngine.dir/src/main.cpp.o -MF CMakeFiles/MiniEngine.dir/src/main.cpp.o.d -o CMakeFiles/MiniEngine.dir/src/main.cpp.o -c /home/mn1str/project/src/main.cpp
 
 CMakeFiles/MiniEngine.dir/src/main.cpp.i: cmake_force
@@ -144,6 +158,7 @@ CMakeFiles/MiniEngine.dir/src/main.cpp.s: cmake_force
 
 # Object files for target MiniEngine
 MiniEngine_OBJECTS = \
+"CMakeFiles/MiniEngine.dir/src/Block.cpp.o" \
 "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o" \
 "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o" \
 "CMakeFiles/MiniEngine.dir/src/Texture.cpp.o" \
@@ -153,6 +168,7 @@ MiniEngine_OBJECTS = \
 # External object files for target MiniEngine
 MiniEngine_EXTERNAL_OBJECTS =
 
+MiniEngine: CMakeFiles/MiniEngine.dir/src/Block.cpp.o
 MiniEngine: CMakeFiles/MiniEngine.dir/src/Camera.cpp.o
 MiniEngine: CMakeFiles/MiniEngine.dir/src/Shader.cpp.o
 MiniEngine: CMakeFiles/MiniEngine.dir/src/Texture.cpp.o
@@ -167,7 +183,7 @@ MiniEngine: external/glm/glm/libglm.a
 MiniEngine: /usr/lib/librt.a
 MiniEngine: /usr/lib/libm.so
 MiniEngine: CMakeFiles/MiniEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MiniEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mn1str/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MiniEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MiniEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
