@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MiniEngine.dir/src/Block.cpp.o.d"
   "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o"
   "CMakeFiles/MiniEngine.dir/src/Camera.cpp.o.d"
+  "CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o"
+  "CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o.d"
   "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"
   "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o.d"
   "CMakeFiles/MiniEngine.dir/src/Texture.cpp.o"

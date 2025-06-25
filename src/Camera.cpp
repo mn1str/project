@@ -25,6 +25,7 @@ void Camera::process_keyboard_input(GLFWwindow* window){
     vec3 temp = camera_front;
     temp.y = 0;
     temp = normalize(temp);
+    if(glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)) camera_speed *= 2.0f;
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){
         camera_position += camera_speed * temp;
     }

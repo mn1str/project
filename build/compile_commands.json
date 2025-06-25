@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/mn1str/project/build",
+  "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -I/home/mn1str/project/external/glfw/include -I/home/mn1str/project/external/glm/include -I/home/mn1str/project/external/glm -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o -c /home/mn1str/project/src/Chunk.cpp",
+  "file": "/home/mn1str/project/src/Chunk.cpp",
+  "output": "CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o"
+},
+{
+  "directory": "/home/mn1str/project/build",
   "command": "/usr/bin/c++  -I/home/mn1str/project/include -I/home/mn1str/project/external/glad/include -I/home/mn1str/project/external/glfw/include -I/home/mn1str/project/external/glm/include -I/home/mn1str/project/external/glm -std=gnu++17 -o CMakeFiles/MiniEngine.dir/src/Shader.cpp.o -c /home/mn1str/project/src/Shader.cpp",
   "file": "/home/mn1str/project/src/Shader.cpp",
   "output": "CMakeFiles/MiniEngine.dir/src/Shader.cpp.o"

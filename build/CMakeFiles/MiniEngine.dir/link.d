@@ -4,6 +4,7 @@ MiniEngine: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/MiniEngine.dir/src/Block.cpp.o \
   CMakeFiles/MiniEngine.dir/src/Camera.cpp.o \
+  CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o \
   CMakeFiles/MiniEngine.dir/src/Shader.cpp.o \
   CMakeFiles/MiniEngine.dir/src/Texture.cpp.o \
   CMakeFiles/MiniEngine.dir/src/Window.cpp.o \
@@ -61,6 +62,8 @@ MiniEngine: \
 CMakeFiles/MiniEngine.dir/src/Block.cpp.o:
 
 CMakeFiles/MiniEngine.dir/src/Camera.cpp.o:
+
+CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o:
 
 CMakeFiles/MiniEngine.dir/src/Shader.cpp.o:
 

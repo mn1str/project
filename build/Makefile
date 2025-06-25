@@ -287,6 +287,30 @@ src/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniEngine.dir/build.make CMakeFiles/MiniEngine.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
 
+src/Chunk.o: src/Chunk.cpp.o
+.PHONY : src/Chunk.o
+
+# target to build an object file
+src/Chunk.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniEngine.dir/build.make CMakeFiles/MiniEngine.dir/src/Chunk.cpp.o
+.PHONY : src/Chunk.cpp.o
+
+src/Chunk.i: src/Chunk.cpp.i
+.PHONY : src/Chunk.i
+
+# target to preprocess a source file
+src/Chunk.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniEngine.dir/build.make CMakeFiles/MiniEngine.dir/src/Chunk.cpp.i
+.PHONY : src/Chunk.cpp.i
+
+src/Chunk.s: src/Chunk.cpp.s
+.PHONY : src/Chunk.s
+
+# target to generate assembly for a file
+src/Chunk.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MiniEngine.dir/build.make CMakeFiles/MiniEngine.dir/src/Chunk.cpp.s
+.PHONY : src/Chunk.cpp.s
+
 src/Shader.o: src/Shader.cpp.o
 .PHONY : src/Shader.o
 
@@ -407,6 +431,9 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
+	@echo "... src/Chunk.o"
+	@echo "... src/Chunk.i"
+	@echo "... src/Chunk.s"
 	@echo "... src/Shader.o"
 	@echo "... src/Shader.i"
 	@echo "... src/Shader.s"
